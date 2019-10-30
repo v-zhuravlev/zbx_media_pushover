@@ -7,5 +7,8 @@ Simple Zabbix 4.4 Webhook integration with https://pushover.app that works witho
 
 
 ## Setup
-Import the configuration file and define required user macros.
+Import the configuration file and define required user macros:
+- Set global macro {$PUSHOVER.TOKEN} with your Application key
+- When assigning Pushover media to the Zabbix user - add user key into 'send to' field.
+
 Read more [here](https://medium.com/@zhuravlev.vitaly/my-first-webhook-in-4-4-how-about-pushover-integration-711a51702963).
