@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.4</version>
-    <date>2019-12-10T07:32:51Z</date>
+    <date>2019-12-10T08:23:13Z</date>
     <media_types>
         <media_type>
             <name>Pushover</name>
@@ -35,6 +35,14 @@
                     <name>priority</name>
                     <value>0</value>
                 </parameter>
+                <parameter>
+                    <name>eventid</name>
+                    <value>{EVENT.ID}</value>
+                </parameter>
+                <parameter>
+                    <name>triggerid</name>
+                    <value>{TRIGGER.ID}</value>
+                </parameter>
             </parameters>
             <max_sessions>0</max_sessions>
             <script>try {&#13;
@@ -58,7 +66,7 @@
        */&#13;
 	fields.title =  params.title;&#13;
 	fields.message =  params.message;&#13;
-        fields.url = params.url;&#13;
+        fields.url = params.url+&quot;/tr_events.php?triggerid=&quot;+params.triggerid+&quot;&amp;eventid=&quot;+params.eventid;&#13;
         fields.url_title = params.url_title;&#13;
         fields.priority = params.priority;&#13;
 	var resp = req.Post('https://api.pushover.net/1/messages.json',&#13;
