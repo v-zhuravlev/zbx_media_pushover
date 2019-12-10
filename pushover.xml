@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.4</version>
-    <date>2019-10-30T13:29:32Z</date>
+    <date>2019-12-10T07:32:51Z</date>
     <media_types>
         <media_type>
             <name>Pushover</name>
@@ -9,7 +9,7 @@
             <parameters>
                 <parameter>
                     <name>token</name>
-                    <value>{$PUSHOVER.TOKEN}</value>
+                    <value>&lt;PUSHOVER TOKEN HERE&gt;</value>
                 </parameter>
                 <parameter>
                     <name>user</name>
@@ -79,7 +79,7 @@
             <show_event_menu>NO</show_event_menu>
             <description>Please refer to https://pushover.net/api and https://www.zabbix.com/documentation/current/manual/config/notifications/media/webhook#example_scripts.&#13;
 &#13;
-Set global macro {$PUSHOVER.TOKEN} with your Application key.&#13;
+Set token parameter with to your Pushover application key.&#13;
 When assigning Pushover media to the Zabbix user - add user key into send to field.</description>
         </media_type>
     </media_types>
