@@ -7,7 +7,7 @@ Simple Zabbix 4.4 Webhook integration with https://pushover.app that works witho
 
 # Guide
 
-[![](images/tn/pushover_logo.png?raw=true)](images/pushover_logo.png)
+[![](images/pushover_logo.png?raw=true)](images/pushover_logo.png)
 
 With Pushover, a user can be notified the most convenient way — with pushes straight to a mobile device.
 
@@ -16,6 +16,7 @@ With Pushover, a user can be notified the most convenient way — with pushes st
 Register account at https://pushover.net/ and then install Pushover app at your iOS or Android device.
 
 Next, go to Apps & Settings and click Create a New Application/API Token, fill in Application information, upload Zabbix logo.
+
 [![](images/tn/pushover2.png?raw=true)](images/pushover2.png)
 
 
@@ -36,7 +37,8 @@ Edit Pushover media type parameters and replace token with your Pushover applica
 
 ### Setup media in user profile
 
-Next, proceed to your User profile and create new Media of Pushover type, use your User key in Send to field:
+Next, proceed to your User profile and create new Media of Pushover type, use your User key in Send to field.
+
 [![](images/tn/zabbix2.png?raw=true)](images/zabbix2.png)
 
 ### Check trigger actions
