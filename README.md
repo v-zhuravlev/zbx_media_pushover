@@ -1,3 +1,5 @@
+Available in Zabbix out of the box now, see here: https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/templates/media/pushover
+
 # Zabbix Pushover webhook integration
 
 Zabbix scriptless webhook integration with Pushover
@@ -13,9 +15,9 @@ With Pushover, a user can be notified the most convenient way — with pushes st
 
 ## Pushover setup
 
-Register account at https://pushover.net/ and then install Pushover app at your iOS or Android device.
+Register the account at https://pushover.net/ and then install Pushover app at your iOS or Android device.
 
-Next, go to Apps & Settings and click Create a New Application/API Token, fill in Application information, upload Zabbix logo.
+Then [click here](https://pushover.net/apps/clone/zabbix) to create new integration with Zabbix.
 
 [![](images/tn/pushover2.png?raw=true)](images/pushover2.png)
 
